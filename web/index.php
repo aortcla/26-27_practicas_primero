@@ -2,7 +2,6 @@
 include_once(dirname(__FILE__) . "/cabecera.php");
 //controlador
 
-$usuario=getenv("MYSQL_USER");
 
 //dibuja la plantilla de la vista
 inicioCabecera("APLICACION PRIMER TRIMESTRE");
@@ -22,7 +21,7 @@ function cuerpo()
 {
 ?>
     <br><br>
-    Hola, estás en Index.php
+    <a href="./aplicacion/pruebas/index.php">Acceso a pruebas</a><br>
 <?php
 }
 //creacion de la rama dev
