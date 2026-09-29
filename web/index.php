@@ -21,7 +21,6 @@ function cuerpo()
 {
 ?>
     <br><br>
-    <a href="./aplicacion/pruebas/index.php">Acceso a pruebas</a><br>
+   <a href="./aplicacion/pruebas/index.php">Acceso a pruebas</a>
 <?php
 }
-//creacion de la rama dev
