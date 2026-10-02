@@ -2,10 +2,10 @@
 include_once(dirname(__FILE__) . "/../../cabecera.php");
 //controlador
 //dibuja la plantilla de la vista
-inicioCabecera("APLICACION  TRIMESTRE");
+inicioCabecera("APLICACION PRIMER TRIMESTRE");
 cabecera();
 finCabecera();
-inicioCuerpo("PRUEBAS");
+inicioCuerpo("RELACION 1");
 cuerpo(); //llamo a la vista
 finCuerpo();
 // **********************************************************
@@ -16,11 +16,7 @@ function cabecera() {}
 function cuerpo()
 {
 ?>
-    <br><br>
-    Elemento de pruebas
-    <br><br>
-    <a href="basicas.php">Funcionamiento básico</a><br>
-    <a href="pasopar.php">Comunicacion controlador-vista</a>
+    <a href="ejer01.php">Ejercicio 1</a><br>
 
 <?php
 }
