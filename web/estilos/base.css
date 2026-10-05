@@ -1,18 +1,24 @@
 @charset "UTF8";
 
 body {
-    background-color: cyan;
+    background-color: rgb(3, 91, 255);
     font-size: 16px;
+}
+
+#titulo {
+    margin: 20px;
 }
 
 #documento{
     margin: 0 auto;
-    background-color: #8080ff;
+    background-color: #829bf0;
     width: 700px;
+    border-radius: 10px;
 }
 #cabecera{
     background-color: #14e737;
     padding: 5px;
+
 }
 #cabecera #logo{
     width: 75px;

@@ -1,23 +1,33 @@
 <?php
 include_once(dirname(__FILE__) . "/../../cabecera.php");
 //controlador
+
+
 //dibuja la plantilla de la vista
 inicioCabecera("APLICACION PRIMER TRIMESTRE");
 cabecera();
 finCabecera();
-inicioCuerpo("RELACION 1");
-cuerpo(); //llamo a la vista
+inicioCuerpo("EJERCICIO 2");
+cuerpo();  //llamo a la vista
 finCuerpo();
 // **********************************************************
 
 //vista
-function cabecera() {}
-//vista
-function cuerpo()
-{
-?>
-    <a href="ejer01.php">Ejercicio 1</a><br>
-    <a href="ejer02.php">Ejercicio 2</a><br>
+function cabecera(){
+    ?>
+    <!-- esto va en el head -->
+    <?php
 
-<?php
+
+}
+
+//vista
+function cuerpo(){
+    ?>
+        <br><br>
+        
+    <?php
+
+    
+
 }
