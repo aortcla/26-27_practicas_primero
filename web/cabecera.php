@@ -1,4 +1,6 @@
 <?php 
+date_default_timezone_set('Europe/Madrid');
+
 define("RUTABASE", dirname(__FILE__));
 //define("MODO_TRABAJO","produccion"); //en "produccion o en desarrollo
 define("MODO_TRABAJO","desarrollo"); //en "produccion o en desarrollo

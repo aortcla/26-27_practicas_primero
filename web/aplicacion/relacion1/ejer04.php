@@ -6,32 +6,39 @@ $barra=[
     "TEXTO"=> "inicio",
     "ENLACE"=> "/index.php"],
     [
-    "TEXTO"=> "Relacion 1"
+    "TEXTO"=> "Relacion 1",
+    "ENLACE"=> "/aplicacion/relacion1/index.php"
     ],
     [
-    "TEXTO"=> "index"
-    ],
+    "TEXTO"=> "ejer4"
+    ]
 ];
 
 //dibuja la plantilla de la vista
 inicioCabecera("APLICACION PRIMER TRIMESTRE");
 cabecera();
 finCabecera();
-inicioCuerpo("RELACION 1", $barra);
-cuerpo(); //llamo a la vista
+inicioCuerpo("EJERCICIO 4", $barra);
+cuerpo();  //llamo a la vista
 finCuerpo();
 // **********************************************************
 
 //vista
-function cabecera() {}
-//vista
-function cuerpo()
-{
-?>
-    <a href="ejer01.php">Ejercicio 1</a><br>
-    <a href="ejer02.php">Ejercicio 2</a><br>
-    <a href="ejer03.php">Ejercicio 3</a><br>
-    <a href="ejer04.php">Ejercicio 4</a><br>
+function cabecera(){
+    ?>
+    <!-- esto va en el head -->
+    <?php
 
-<?php
+
+}
+
+//vista
+function cuerpo(){
+    ?>
+        <br><br>
+        
+    <?php
+
+ 
+    
 }
