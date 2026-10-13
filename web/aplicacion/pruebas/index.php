@@ -27,13 +27,12 @@ function cabecera() {}
 //vista
 function cuerpo()
 {
-?>
+?>  
     <br><br>
-    Elemento de pruebas
-    <br><br>
-    <a href="basicas.php">Funcionamiento básico</a><br>
-    <a href="array.php">Arrays</a><br>
-    <a href="pasopar.php">Comunicacion controlador-vista</a>
+    <a href="basicas.php">1- Funcionamiento básico</a><br>
+    <a href="array.php">2- Arrays</a><br>
+    <a href="pasopar.php">3- Comunicacion controlador-vista</a><br>
+    <a href="cadenas.php">4- Cadenas</a>
 
 <?php
 }
