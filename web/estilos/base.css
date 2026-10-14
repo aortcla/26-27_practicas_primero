@@ -9,6 +9,7 @@ body {
     margin: 0 auto;
     background-color: #8080ff;
     width: 700px;
+    border-radius: 10px;
 }
 #cabecera{
     background-color: #14e737;
