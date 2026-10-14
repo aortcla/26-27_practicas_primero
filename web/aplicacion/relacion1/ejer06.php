@@ -46,6 +46,27 @@ function cuerpo(array $vector){
         
     <?php
 
+     echo "<h3>Recorrido usando funciones de cursor</h3>";
+    //pongo el puntero a la primera posicion
+    reset($vector);
+    while(key($vector) != NULL) 
+        {
+            //obtener clave y valor
+            echo "Posición: " . key($vector) . " -> " . current($vector)."<br>";
+            //incrementar posicion
+            next($vector);
+        }
+
+   
+    echo "<h3>Usando array_keys y array_values</h3>".PHP_EOL;
     
+    $claves=array_keys($vector);
+    $valores=array_values($vector);
+
+    for ($cont=0;$cont<count ($claves);$cont++)
+    {
+        echo "Posición:  $claves[$cont] -> {$valores[$cont]} <br>".PHP_EOL;
+        
+    }
 
 }

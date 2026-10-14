@@ -14,12 +14,22 @@ $barra=[
     ],
 ];
 
+$var = 5;
+
+$heredoc = <<<fin
+    {$var} Probando echo con HEREDOC ', &ltp&gthola&lt/p&gt  á, é, ñ<br>
+fin;
+
+$nowdoc = <<<'fin'
+    Probando echo con {NOWDOC} \', &ltp&gthola&lt/p&gt  á, é, ñ<br>
+fin;
+
 //dibuja la plantilla de la vista
 inicioCabecera("APLICACION PRIMER TRIMESTRE");
 cabecera();
 finCabecera();
 inicioCuerpo("Ejercicio 1", $barra);
-cuerpo();  //llamo a la vista
+cuerpo($var, $heredoc, $nowdoc);  //llamo a la vista
 finCuerpo();
 // **********************************************************
 
@@ -33,11 +43,20 @@ function cabecera(){
 }
 
 //vista
-function cuerpo(){
+function cuerpo(int $var, string $heredoc, string $nowdoc){
     ?>
         <br><br>
         
     <?php
 
-  
+    
+    echo $var.' Probando echo con {\'\'} \', &ltp&gthola&lt/p&gt  á, é, ñ<br>'.PHP_EOL;
+
+    echo "{$var} Probando echo con {\"\"} ', &ltp&gthola&lt/p&gt  á, é, ñ<br>".PHP_EOL;
+
+    echo $heredoc .PHP_EOL;
+
+    echo $var . $nowdoc .PHP_EOL;
+
+    
 }
