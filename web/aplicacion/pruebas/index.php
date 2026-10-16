@@ -32,7 +32,8 @@ function cuerpo()
     <a href="basicas.php">1- Funcionamiento básico</a><br>
     <a href="array.php">2- Arrays</a><br>
     <a href="pasopar.php">3- Comunicacion controlador-vista</a><br>
-    <a href="cadenas.php">4- Cadenas</a>
+    <a href="cadenas.php">4- Cadenas</a><br>
+    <a href="expresionesRegulares.php">5- Expresiones regulares</a>
 
 <?php
 }
