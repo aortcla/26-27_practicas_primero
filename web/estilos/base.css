@@ -68,10 +68,6 @@ body {
     
 }
 
-.tabla tr.impar{
-    
-}
-
 #pie{
     background-color: #81e714;
     color: blue;
@@ -91,4 +87,23 @@ body {
     color:red;
     border:thin solid red;
     padding:5px;
+}
+
+.barraMenu {
+    text-align: center;
+    gap: 10px;
+}
+
+.barraMenu ul li{
+    display: inline;
+    list-style: none;
+}
+
+.barraMenu ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.barraMenu ul li a:hover {
+    border-bottom: 1px solid #000000;
 }
