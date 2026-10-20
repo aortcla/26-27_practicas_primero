@@ -1,5 +1,8 @@
 <?php
 include_once(dirname(__FILE__) . "/../../cabecera.php");
+
+include("miLibreria.php");
+
 //controlador
 $barra=[
     [
@@ -28,7 +31,9 @@ function cabecera() {}
 function cuerpo()
 {
 ?>
-    <a href="ejer01.php">Ejercicio 1</a><br>
 
 <?php
+
+echo "<h2>Ejercicio 1</h2><hr>";
+
 }
