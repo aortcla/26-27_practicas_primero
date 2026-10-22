@@ -41,25 +41,28 @@ function generarCadena(int $num = 10): string | bool{
 
 }
 
-function operaciones(int $operacion, ...$operandos) :float {
+function operaciones(int $operacion, int $operando1, int $operando2, ...$operandos) :float {
     $resultado = 0;
     $pares = 0;
     $impares = 0;
 
     switch ($operacion) {
         case 1:
+            $resultado += $operando1 + $operando2;
             foreach ($operandos as $num) {
                 $resultado += $num;
             }
             break;
         case 2:
+            $resultado = $operando1 - $operando2;
             foreach ($operandos as $num){
                 $resultado -= $num;
             }
             break;
         case 3:
+            $resultado = $operando1 * $operando2;
             foreach ($operandos as $num){
-                $resultado = ($resultado+1) * $num;
+                $resultado += $resultado * $num;
             }
             break;
         default:

@@ -55,6 +55,10 @@ echo "Numero de caracteres por defecto : ".generarCadena()."<br>".PHP_EOL;
 
 //Ejercicio 3
 echo "<hr><h2>Ejercicio 3</h2><br>";
+echo "Suma de 2 + 2: ".operaciones(1,2,2)."<br>";
+echo "Suma de 2+2+2+2+2+2+2+2+2+2: ".operaciones(1,2,2,2,2,2,2,2,2,2,2)."<br>";
+echo "Resta de 2 - 2: ".operaciones(2,2,2)."<br>";
+echo "Multiplicacion de 2 x 2: ".operaciones(3,2,2)."<br>";
 
 //Ejercicio 4
 echo "<hr><h2>Ejercicio 4</h2><br>";
