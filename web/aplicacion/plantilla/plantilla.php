@@ -57,6 +57,7 @@ function inicioCuerpo(string $cabecera, array $ubicacion = [])
         <div id="documento">
         
             <header>
+                <a href="../../index.php"><img src="../../favicon.ico" alt="Volver al inicio" style="width: 50px; height: 50px;"></a>
                 <h1 id="titulo"><?php echo $cabecera;?></h1>
             </header>
             
@@ -70,6 +71,7 @@ function inicioCuerpo(string $cabecera, array $ubicacion = [])
                     <li><a href="/aplicacion/relacion1/index.php">Relacion 1</a></li>
                     <li><a href="/aplicacion/relacion2/index.php">Relacion 2</a></li>
                     <li><a href="/aplicacion/relacion3/index.php">Relacion 3</a></li>
+                    <li><a href="../relacion4/index.php">Relacion 4</a></li>
                  </ul>
                 
             </div>
