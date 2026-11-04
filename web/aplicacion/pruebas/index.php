@@ -35,7 +35,8 @@ function cuerpo()
     <a href="cadenas.php">4- Cadenas</a><br>
     <a href="expresionesRegulares.php">5- Expresiones regulares</a><br>
     <a href="indexFunciones.php">6- Funciones</a><br>
-    <a href="clases.php">7- Clases</a>
+    <a href="clases.php">7- Clases</a><br>
+    <a href="./pagFormulario.php">8 - Formulario</a>
 
 <?php
 }
