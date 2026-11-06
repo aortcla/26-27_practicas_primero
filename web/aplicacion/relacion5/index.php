@@ -30,8 +30,9 @@ function cuerpo()
 {
 ?>
 
-<?php
+    <a href="pruebasFunciones.php">Pruebas funciones</a>
 
+<?php
 
 
 }
