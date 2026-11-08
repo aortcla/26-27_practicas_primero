@@ -57,8 +57,8 @@ function cuerpo()
         $valores['nombre'] = $nombre;
 
         $contrasena = $_POST['contrasena'];
-        $patron = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$_\-;<>@]).{8,15}$/';
-        if (!validaExpresion($contrasena, $patron, '')) {
+        $expresionRegular = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$_\-;<>@]).{8,15}$/';
+        if (!validaExpresion($contrasena, $expresionRegular, '')) {
             $errores['contrasena'] = "Contraseña inválida";
         }
 
@@ -79,8 +79,8 @@ function cuerpo()
         if (!validaFecha($fecha_carnet, '')) {
             $errores['fecha_carnet'] = "Fecha de carnet inválida";
         } else {
-            $fnac = DateTime::createFromFormat('d/m/Y', $fecha_nacimiento);
-            $mayorEdad = clone $fnac;
+            $fechaNac = DateTime::createFromFormat('d/m/Y', $fecha_nacimiento);
+            $mayorEdad = clone $fechaNac;
             $mayorEdad->add(new DateInterval('P18Y'));
             $fcarnet = DateTime::createFromFormat('d/m/Y', $fecha_carnet);
             if ($fcarnet < $mayorEdad) {
