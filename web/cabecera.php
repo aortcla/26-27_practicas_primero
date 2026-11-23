@@ -36,11 +36,11 @@ $arrayPuntosDefecto = [
     ];
 
 $puntos = [];
-$datosPuntos = [];
+$datosPunto = [];
 
 if(lecturaFichero("imagen_".obtenerIpNavegador().".dat", $datosPuntos))
 {
-    foreach($datosPuntos as $dato)
+    foreach($datosPunto as $dato)
     {
         array_push($puntos, new Punto(intval($dato[0]), intval($dato[1]), $dato[2], intval($dato[3])));
     }

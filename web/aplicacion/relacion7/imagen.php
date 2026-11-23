@@ -13,7 +13,7 @@ foreach($puntos as $punto)
 {
     $rgb = Punto::COLORES[$punto->getColor()]["rgb"];
     $color = imagecolorallocate($imagen, $rgb[0], $rgb[1], $rgb[2]);
-    imagefilledellipse($imagen, $punto->getPosX(), $punto->getPosY(), $punto->getGrosor()*4, $punto->getGrosor()*5, $color);
+    imagefilledellipse($imagen, $punto->getPropX(), $punto->getPropY(), $punto->getGrosor()*4, $punto->getGrosor()*5, $color);
 }
 
 $nombreDescarga = "imagen_" . obtenerIpNavegador() . ".jpg";

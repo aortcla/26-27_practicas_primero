@@ -131,25 +131,22 @@ function lecturaFichero(string $nombre, ?array &$datos = null): bool
 
 function obtenerIpNavegador(): string
 {
-    $dirIp = str_replace(".", "_", $_SERVER['REMOTE_ADDR']);
-    $navegador = "otro";
-    $userAgent = $_SERVER['HTTP_USER_AGENT'];
+    $dirIp = str_replace(".", "_", $_SERVER['REMOTE_ADDR'] ?? '');
+    $userAgent = $_SERVER['HTTP_USER_AGENT'] ?? '';
 
-    if (mb_stripos($userAgent, 'Edg'))
+    if (mb_stripos($userAgent, 'Edg') !== false) {
         $navegador = "edge";
-
-    if (mb_stripos($userAgent, 'Opr') || mb_stripos($userAgent, 'OPR'))
+    } elseif (mb_stripos($userAgent, 'OPR') !== false) {
         $navegador = "opera";
-
-    if (mb_stripos($userAgent, 'Chrome'))
+    } elseif (mb_stripos($userAgent, 'Chrome') !== false) {
         $navegador = "chrome";
-
-    if (mb_stripos($userAgent, 'Firefox'))
+    } elseif (mb_stripos($userAgent, 'Firefox') !== false) {
         $navegador = "firefox";
-
-    if (mb_stripos($userAgent, 'Safari'))
+    } elseif (mb_stripos($userAgent, 'Safari') !== false) {
         $navegador = "safari";
+    } else {
+        $navegador = "otro";
+    }
 
-
-    return $dirIp."_".$navegador;
+    return $dirIp . "_" . $navegador;
 }
